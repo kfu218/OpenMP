@@ -1,0 +1,7 @@
+# sources compiling results
+main
+*.o
+
+# vim temporary files
+~*
+*.swp
