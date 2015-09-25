@@ -1,5 +1,6 @@
 # sources compiling results
 main
+*.out
 *.o
 
 # vim temporary files
