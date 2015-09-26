@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <omp.h>
 
-
-void run_if_multi_threads(int threads_count)
+void run_if_multi_threads(int threads_count = 1)
 {
     omp_set_num_threads(threads_count);
     printf("You set threads count eql %d\n", threads_count);
@@ -16,6 +15,6 @@ void run_if_multi_threads(int threads_count)
 int main()
 {
     run_if_multi_threads(3);
-    run_if_multi_threads(1);
+    run_if_multi_threads();
     return 0;
 }
