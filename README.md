@@ -15,8 +15,10 @@ Yet, all examples is one file.
 
 For compile C programs run
 ```shell
-gcc file_name.c -fopenmp
+gcc file_name.c -fopenmp -std=c99
 ```
+
+For run programs, you need to use C language standart c99 or larger.
 
 For compile C++ programs run
 ```shell
