@@ -18,6 +18,8 @@ int main()
     read(a, N);
     read(b, N);
 
+    omp_set_num_threads(2);
+
     #pragma omp parallel
     {
         if (omp_get_thread_num() == 0)
@@ -29,11 +31,7 @@ int main()
                     min = a[i];
             }
         }
-    }
-
-    #pragma omp parallel
-    {
-        if (omp_get_thread_num() == 1)
+        else
         {
             max = b[0];
             for(int i = 0; i < N; i++)
